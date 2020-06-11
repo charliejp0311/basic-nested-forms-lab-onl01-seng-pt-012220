@@ -3,15 +3,10 @@
   <%= f.text_field :title %><br>
  
   <%= f.fields_for :ingredients do |i| %>
-    <%= i.label :name %>
+    <%= i.label :ingredients %>
     <%= i.text_field :name %><br>
-    <%= i.label :quantity %>
-    <%= i.text_field :quantity %><br>
-  <% end %>
-  <%= f.fields_for :ingredients do |i| %>
-    <%= i.label :name %>
-    <%= i.text_field :name %><br>
-    <%= i.label :quantity %>
+ 
+    <%= i.label :ingredients %>
     <%= i.text_field :quantity %><br>
   <% end %>
  

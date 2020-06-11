@@ -9,12 +9,12 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
-    @recipe.ingredients.build
+    @recipe.ingredients.build()
   end
 
   def create
-    @recipe = Recipe.create(recipe_params)
-    redirect_to recipe_path(@recipe)
+    recipe = Recipe.create(recipe_params)
+    redirect_to recipe_path
   end
 
   private

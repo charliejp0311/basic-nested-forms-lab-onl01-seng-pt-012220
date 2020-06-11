@@ -5,12 +5,8 @@
   <%= f.fields_for :ingredients do |i| %>
     <%= i.label :name %>
     <%= i.text_field :name %><br>
-    <%= i.label :quantity %>
-    <%= i.text_field :quantity %><br>
-  <% end %>
+ <% end %>
   <%= f.fields_for :ingredients do |i| %>
-    <%= i.label :name %>
-    <%= i.text_field :name %><br>
     <%= i.label :quantity %>
     <%= i.text_field :quantity %><br>
   <% end %>
